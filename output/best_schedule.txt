@@ -1,0 +1,51 @@
+CS 461 Program 2 — Final-generation best schedule
+Population: 250 | Generations: 100
+Initial mutation rate: 0.01000000
+Final mutation rate: 0.00000977
+Adaptive mutation-rate changes: 10
+Best fitness in final generation: 6.9000
+Best fitness observed across all generations: 6.9000
+Stop: Generation-to-generation average fitness improvement was 0.0000% (< 1.0%)
+
+Mutation-rate adjustment log (after the listed generation):
+  Gen 2: 0.01000000 -> 0.00500000 (improvement 116.5723%)
+  Gen 3: 0.00500000 -> 0.00250000 (improvement 462.0604%)
+  Gen 4: 0.00250000 -> 0.00125000 (improvement 60.0811%)
+  Gen 5: 0.00125000 -> 0.00062500 (improvement 30.1773%)
+  Gen 6: 0.00062500 -> 0.00031250 (improvement 16.9782%)
+  Gen 7: 0.00031250 -> 0.00015625 (improvement 7.8191%)
+  Gen 8: 0.00015625 -> 0.00007813 (improvement 4.1105%)
+  Gen 9: 0.00007813 -> 0.00003906 (improvement 4.2252%)
+  Gen 10: 0.00003906 -> 0.00001953 (improvement 2.5090%)
+  Gen 11: 0.00001953 -> 0.00000977 (improvement 1.9351%)
+
+Activity   Enrollment Room           Time     Facilitator
+-----------------------------------------------------------------
+SLA191A    45         Loft 206       10 AM    Numen
+SLA191B    40         Loft 206       11 AM    Shaw
+SLA291     50         Loft 206       11 AM    Numen
+SLA394     15         Slater 003     11 AM    Tyler
+SLA101A    40         Loft 310       12 PM    Shaw
+SLA101B    35         Slater 003     12 PM    Lock
+SLA201     60         Frank 119      12 PM    Lock
+SLA304     20         James 325      12 PM    Numen
+SLA303     25         Loft 206       1 PM     Lock
+SLA449     30         Slater 003     1 PM     Shaw
+SLA451     90         James 325      3 PM     Shaw
+
+Fitness breakdown (additive categories):
+  101_191_time                   +1.5000
+  consecutive_facilitator        +3.0000
+  facilitator_preference         +2.2000
+  room_conflict                  -1.0000
+  room_size                      +0.3000
+  same_time_facilitator          +1.4000
+  section_separation             -0.5000
+
+Constraint diagnostics (counts):
+  colliding_room_pairs                1
+  colliding_facilitator_pairs         1
+  undersized_room_assignments         1
+  overloaded_facilitators_5plus       0
+  low_load_non_Tyler                  0
+  same_slot_101_or_191_pairs          1
